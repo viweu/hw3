@@ -7,6 +7,7 @@ public class FamilyTree implements Iterable<Person> {
     public Iterator<Person> iterator() {
         return new FamilyTreeIterator(familyMembers);
     }
+
     public void sortByName() {
         familyMembers.sort(Comparator.comparing(Person::getName));
     }
